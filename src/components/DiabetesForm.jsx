@@ -28,17 +28,17 @@ const DiabetesForm = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Age:</label>
-                    <input type="number" name="age" value={formData.age} onChange={handleChange} required />
+                <div className="form-group" style={{ display: 'flex', alignItems: 'center'}}>
+                    <label style={{ marginRight: 10,marginLeft:'298px' }}>Age:</label>
+                    <input type="number" name="age" value={formData.age} onChange={handleChange} required style={{ color: 'white', backgroundColor: 'grey', width:'140px',height: '20px' }} />
                 </div>
-                <div>
-                    <label>BMI:</label>
-                    <input type="number" name="bmi" value={formData.bmi} onChange={handleChange} required />
+                <div className="form-group" style={{ display: 'flex', alignItems: 'center'}}>
+                    <label style={{ marginRight: 10, marginLeft:'298px' }}>BMI:</label>
+                    <input type="number" name="bmi" value={formData.bmi} onChange={handleChange} required style={{ color: 'white', backgroundColor: 'grey', width:'140px',height: '20px' }} />
                 </div>
-                <div>
-                    <label>Glucose Level:</label>
-                    <input type="number" name="glucose" value={formData.glucose} onChange={handleChange} required />
+                <div className="form-group" style={{ display: 'flex'}} >
+                    <label style={{ marginRight: 10, marginLeft: '225px'}}>Glucose Level:</label>
+                    <input type="number" name="glucose" value={formData.glucose} onChange={handleChange} required style={{ color: 'white', backgroundColor: 'grey', width:'140px',height: '20px' }} />
                 </div>
                 <button type="submit">Predict</button>
             </form>
